@@ -2,9 +2,9 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Route , Routes, } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import About from "./components/About";
-import Contact from "./components/Contact"
-import Services from "./components/Services";
+// import About from "./components/About";
+// import Contact from "./components/Contact"
+// import Services from "./components/Services";
 import Home from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 import Footer from "./components/Footer";

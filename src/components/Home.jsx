@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import HeroSection from "./HeroSection";
-import Services from "./Services";
+// import Services from "./Services";
 
 
 
