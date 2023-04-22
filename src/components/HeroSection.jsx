@@ -44,8 +44,9 @@ const HeroSection=() =>
 const Wrapper= styled.section `
 
     padding: 9rem 0;
-    background: linear-gradient(0deg, #DC2C1D -170%, rgba(255, 255, 255, 0) 60%);
-    ${'' /* box-shadow: 0px -70px 170px 15px #DC2C1D; */}
+    ${'' /* background: linear-gradient(0deg, #DC2C1D -170%, rgba(255, 255, 255, 0) 60%); */}
+    margin-top:10rem;
+    
 
     .section-hero-data{
         display: flex;
@@ -58,7 +59,7 @@ const Wrapper= styled.section `
         font-size:8rem;
         ${'' /* height: 20rem; */}
         color:#f75a4b;
-        width: 100%
+        width: 100%;
     }
 
     .btn{
@@ -105,16 +106,19 @@ const Wrapper= styled.section `
 
     picture {
         text-align: center;
-        
+        ${'' /* background:#DC2C1D; */}
     }
     picture img{
         height:43rem;
         width:55rem;
         border-radius:100%;
+        
+
     }
 
     .hero-img {
         max-width: 80%;
+
     }
 
     .fluidAnim{

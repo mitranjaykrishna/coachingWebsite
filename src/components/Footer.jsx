@@ -30,15 +30,15 @@ const Footer =()=>{
 
             {/* 1st col */}
             <div className='footer-about'>
-                <h3>VipSeoTools</h3>
-                <p>Best, Reliable Group Buy Services</p>
+                <h3>Saraswati Classes</h3>
+                <p>With determination to get the best results</p>
             </div>
 
 
             {/* 2nd col */}
             <div className='footer-subscribe'>
                 <h3>Subscribe to get important updates</h3>
-                <form action="https://formspree.io/f/mzbqrwve" method="POST" >
+                <form action="/" method="POST" >
                     <input type='email' required autoComplete='off' placeholder='Email'/>
                     <input type='submit' value='Subscribe'/>
                 </form>
@@ -49,13 +49,13 @@ const Footer =()=>{
                 <h3>Follows Us</h3>
                 <div className='footer-social--icons'>
                     <div>
-                        <a href='https://www.instagram.com/vipseotools' target='_blank' rel="noreferrer">
+                        <a href='/' target='_blank' rel="noreferrer">
                             <FaInstagram className="icons" />
                         </a>
                     </div>
 
                     <div>
-                        <a href='https://www.facebook.com/Vipseotools?mibextid=ZbWKwL' target='_blank' rel='noreferrer'>
+                        <a href='/' target='_blank' rel='noreferrer'>
                             <FaFacebook className="icons" />
                         </a>
                     </div>
@@ -76,7 +76,7 @@ const Footer =()=>{
             <hr />
             <div className='container grid grid-three-column'>
                 <p>
-                    @{new Date().getFullYear()} VipSeoTools. All Rights Reserved
+                    @{new Date().getFullYear()} Saraswati Classes. All Rights Reserved
                 </p>
                 <div>
                     <p>PRIVACY POLICY</p>

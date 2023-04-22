@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import Button from '@mui/material/Button';
@@ -9,9 +9,22 @@ import "../styles/NavBar.css"
 
 
 const NavBar=() =>{
+
+    const [fix,setFix]=useState(false);
+
+    const setFixed=()=>{
+        if(window.scrollY >=0){
+            setFix(true);
+        }else{
+            setFix(false);
+        }
+    }
+
+    window.addEventListener("scroll",setFixed);
+
     return (
         <>
-            <nav className="main_nav">
+            <nav className={fix?"main_nav fix":"main_nav"}>
                 <div className="logo">
                     <NavLink to="/"><img src={"./images/logo.png"} alt="Logo" /> </NavLink>
                 </div>
