@@ -53,7 +53,7 @@ const Contact=() =>{
         <Wrapper>
             <h2 className="common-heading"> Feel Free to Contact US</h2>
 
-            <iframe title="map"
+            {/* <iframe title="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14235.810693053927!2d81.00907655041941!3d26.873244686593118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2901630467d%3A0x9375b04ab09c507b!2sHelmets!5e0!3m2!1sen!2sin!4v1677186714014!5m2!1sen!2sin"
              width="100%"
               height="250" 
@@ -62,7 +62,17 @@ const Contact=() =>{
                loading="lazy" 
                referrerPolicy="no-referrer-when-downgrade">
 
-            </iframe>
+            </iframe> */}
+
+            <iframe title="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.232558195384!2d82.13884191744383!3d26.768855899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a061d0c8a540d%3A0x22fcdf8658f60140!2sSaraswati%20Classes!5e0!3m2!1sen!2sin!4v1682266605921!5m2!1sen!2sin"
+             width="100%" 
+             height="450" 
+             style={{border:0}}
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
 
             <div className="container">
                 <div className="contact-form">

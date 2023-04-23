@@ -25,11 +25,11 @@ const Services=() =>{
                 <div className="container grid grid-two-column">
                     {
                         services.map((curElem) => {
-                            const {id, title, price, description} =curElem;
+                            const {id, title, img, description} =curElem;
                             return(
                                 <div key={id} className="card">
                                     <figure>
-                                        <h1 className="price">{price}</h1>
+                                        <img src={img} alt="" />
                                     </figure>
                                     <div className="card-data">
                                         <h3>{title}</h3>
@@ -38,7 +38,7 @@ const Services=() =>{
                                         <p className="description">{description}</p>
 
 
-                                        <Button className="btn"><a href="/" >Subscribe</a></Button>
+                                        <Button className="btn"><a href="/" >View Courses</a></Button>
                                     </div>
                                 </div>
                             );
@@ -78,10 +78,15 @@ const Wrapper = styled.section`
         background-color: ${({theme})=> theme.colors.bg};
         border-radius: 1rem;
         box-shadow: ${({theme}) => theme.colors.shadowSupport};
+
+        &:hover img{
+            transform: scale(1.1,1.1);
+        }
         
 
         .card-data{
             padding: 0 2rem;
+            
             
         }
         
@@ -90,7 +95,9 @@ const Wrapper = styled.section`
             font-weight: 700;
             font-size: 3rem;
             color:  #1d73dc;
+            z-index:100;
         }
+        
 
         .description{
             text-align: justify;
@@ -106,6 +113,8 @@ const Wrapper = styled.section`
             align-items: center;
             color:  #1d73dc;
             font-size: 1.4rem;
+
+            
 
             &:hover{
                 background-color:  rgba(44, 182, 120, 0.226);
@@ -127,9 +136,9 @@ const Wrapper = styled.section`
         transition: all 0.5s linear;
         
         
-        .price{
+        ${'' /* .price{
             color: rgb(44, 182, 120);
-        }
+        } */}
 
         &::after{
             content: "";
@@ -141,6 +150,7 @@ const Wrapper = styled.section`
             background: rgba(44, 182, 120, 0.226);
             transition: all 0.2s linear;
             cursor: pointer;
+            z-index:0;
         }
 
         &:hover::after{
@@ -148,15 +158,16 @@ const Wrapper = styled.section`
         }
         
 
-        &:hover img{
-            transform: scale(1,2);
-        }
+        ${'' /* &:hover img{
+            transform: scale(1.1,1.1);
+        } */}
 
         img{
             max-width: 90%;
             margin-top: 1.5rem;
-            height: 20rem;
+            height: 15rem;
             transition: all 0.2s linear;
+            z-index:1;
         }
     }
     a:link, a:visited{

@@ -15,6 +15,11 @@ const HeroSection=() =>
     return (
         <>
             <Wrapper>
+                {/* <div className="slide-section">
+                     <img src="./images/banner/banner1.jpg" alt=""></img>
+                </div> */}
+
+
                 <div className="container grid grid-two-column">
                     <div className="section-hero-data">
                         <p className="hero-top-data"><b>{heroTopData}</b></p>
@@ -49,6 +54,16 @@ const Wrapper= styled.section `
     ${'' /* background: linear-gradient(0deg, #DC2C1D -170%, rgba(255, 255, 255, 0) 60%); */}
     ${'' /* margin-top:10rem; */}
     
+    .slide-section{
+        margin: 0 auto ;
+        max-width: 130rem;
+        height:40rem;
+        padding:0;
+    }
+    .slide-section img{
+        width:100%;
+        height:40rem;
+    }
 
     .section-hero-data{
         display: flex;
@@ -118,17 +133,23 @@ const Wrapper= styled.section `
     picture {
         text-align: center;
         ${'' /* background:#DC2C1D; */}
+        
     }
     picture img{
         height:43rem;
         width:50rem;
         border-radius:100%;
+        ${'' /* box-shadow: 0px 0px 20px 1px  #f58634; */}
+        ${'' /* background: #fdd1a2; */}
+        
+        
         
 
     }
 
     .hero-img {
         max-width: 80%;
+
 
     }
 

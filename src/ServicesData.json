@@ -1,22 +1,33 @@
 [
     {
         "id":1,
-        "title": "Foundation NEET/JEE",
+        "title": "JEE(Main+Advanced) IIT-JEE",
         "price": "₹30,000/yr",
+        "img":"./images/courseImage/eng.png",
         "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
     {
         "id":2,
-        "title": "Pre-Foundation NEET/JEE",
+        "title": "Pre-Medical NEET UG",
         "price": "₹30,000/yr",
-        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 9th/10th"
+        "img":"./images/courseImage/doc.png",
+        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
     {
         "id":3,
+        "title": "JEE (Main)",
+        "price": "₹30,000/yr",
+        "img":"./images/courseImage/eng2.png",
+        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 9th/10th"
+    },
+
+    {
+        "id":4,
         "title": "Regular Academics 11th/12th",
         "price": "₹2,700/mo",
+        "img":"./images/courseImage/stu1.png",
         "description": "For All 11th/12th Science Stream PCM & PCB "
     },
 
@@ -24,6 +35,7 @@
         "id":4,
         "title": "Regular Academics 9th/10th",
         "price": "₹1400/mo",
+        "img":"./images/courseImage/stu2.png",
         "description": "For All 9th/10th Science Stream PCM & PCB"
     }
 ]
