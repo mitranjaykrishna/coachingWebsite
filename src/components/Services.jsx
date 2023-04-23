@@ -21,7 +21,7 @@ const Services=() =>{
     return (
         <>
             <Wrapper className="section">
-                <h2 className="common-heading"> Our Affordable Courses <span className="insideThought">With Best Class Faculty</span></h2>
+                <h2 className="heading"> Our Affordable Courses <span className=" common-heading insideThought">With Best Class Faculty</span></h2>
                 <div className="container grid grid-two-column">
                     {
                         services.map((curElem) => {
@@ -59,6 +59,13 @@ const Wrapper = styled.section`
         max-width: 120rem;
 
     }
+    .heading {
+      font-size: 6rem;
+      font-weight: 700;
+      margin-bottom: 6rem;
+      text-transform: capitalize;
+      color: rgb(44, 182, 120);
+    }
     .insideThought{
         display:flex;
         justify-content: center;
@@ -82,7 +89,7 @@ const Wrapper = styled.section`
             margin: 3rem 0;
             font-weight: 700;
             font-size: 3rem;
-            color:  rgb(98 84 243);
+            color:  #1d73dc;
         }
 
         .description{
@@ -93,16 +100,16 @@ const Wrapper = styled.section`
         .btn{
             margin: 2rem auto;
             background-color: rgb(0 0 0 /0%);
-            border: 0.1rem solid rgb(98 84 243);
+            border: 0.1rem solid  #1d73dc;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: rgb(98 84 243);
+            color:  #1d73dc;
             font-size: 1.4rem;
 
             &:hover{
-                background-color: rgb(98 84 243);
-                color: #fff;
+                background-color:  rgba(44, 182, 120, 0.226);
+                ${'' /* color:  #1d73dc; */}
             }
 
             
@@ -121,7 +128,7 @@ const Wrapper = styled.section`
         
         
         .price{
-            color: #1e9affef;
+            color: rgb(44, 182, 120);
         }
 
         &::after{
@@ -131,7 +138,7 @@ const Wrapper = styled.section`
             left:0;
             width: 0%;
             height: 100%;
-            background: #1e9aff61;
+            background: rgba(44, 182, 120, 0.226);
             transition: all 0.2s linear;
             cursor: pointer;
         }
@@ -153,10 +160,10 @@ const Wrapper = styled.section`
         }
     }
     a:link, a:visited{
-    color: rgb(98 84 243);
+    color:  #1d73dc;
 
     &:hover{
-        color: #fff;
+        color: #1d73dc;
     }
     
     }
