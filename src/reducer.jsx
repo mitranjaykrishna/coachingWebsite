@@ -7,7 +7,8 @@ const reducer = (state,action)=>{
         return {
             ...state,
             heroTopData: action.payload.heroTopData,
-            heading: action.payload.heading, 
+            heading: action.payload.heading,
+            heading1: action.payload.heading1, 
             heroPara: action.payload.heroPara,
             groupButton1: action.payload.groupButton1,
             link1:action.payload.link1,
@@ -24,6 +25,7 @@ const reducer = (state,action)=>{
             ...state,
             heroTopData: action.payload.heroTopData,
             heading: action.payload.heading, 
+            heading1: action.payload.heading1, 
             heroPara: action.payload.heroPara,
             groupButton1: action.payload.groupButton1,
             link1:action.payload.link1,

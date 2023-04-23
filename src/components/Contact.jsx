@@ -7,6 +7,8 @@ const Contact=() =>{
 
     const Wrapper=styled.section`
         padding: 9rem 0 5rem 0;
+        margin-top:10rem;
+
 
         .container{
             margin-top: 6rem;
@@ -48,7 +50,7 @@ const Contact=() =>{
         }
     `;
     return (
-        <Wrapper >
+        <Wrapper>
             <h2 className="common-heading"> Feel Free to Contact US</h2>
 
             <iframe title="map"

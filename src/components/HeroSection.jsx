@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const HeroSection=() =>
 {
 
-    const {heroTopData,heading,heroPara,groupButton1,link1,groupButton2,link2,pageImage}=useGlobalContext();
+    const {heroTopData,heading,heading1,heroPara,groupButton1,link1,groupButton2,link2,pageImage}=useGlobalContext();
     // console.log(link1);
 
     return (
@@ -20,8 +20,10 @@ const HeroSection=() =>
                         <p className="hero-top-data"><b>{heroTopData}</b></p>
                         <h1 className="hero-heading">
                            {heading}
+                           <span className="insideThought">{heading1}</span>
                         </h1>
-                        <p className="hero-para">{heroPara}</p>
+                        
+                        <p className="hero-para fluidAnimPara">{heroPara}</p>
                         <Box>
                             <ButtonGroup variant="outlined" aria-label="outlined button group" className="buttonEffect">
                                 <Button className="btn logReg "><NavLink exact activeClassName="active" to={link1}><b>{groupButton1}</b></NavLink></Button>
@@ -43,9 +45,9 @@ const HeroSection=() =>
 
 const Wrapper= styled.section `
 
-    padding: 9rem 0;
+    padding: 9rem 0 0;
     ${'' /* background: linear-gradient(0deg, #DC2C1D -170%, rgba(255, 255, 255, 0) 60%); */}
-    margin-top:10rem;
+    ${'' /* margin-top:10rem; */}
     
 
     .section-hero-data{
@@ -56,10 +58,18 @@ const Wrapper= styled.section `
     }
 
     .hero-heading{
-        font-size:8rem;
+        font-size:9rem;
         ${'' /* height: 20rem; */}
-        color:#f75a4b;
+        font-weight:700;
+        background: linear-gradient(to right, red , #1d73dc, black);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
         width: 100%;
+    }
+    .insideThought{
+        display:flex;
+        justify-content: center;
+        font-size:1.7rem;
     }
 
     .btn{
@@ -72,7 +82,7 @@ const Wrapper= styled.section `
     }
 
     .buttonEffect :hover{
-    color: rgb(71, 209, 240);
+    ${'' /* color: #1d73dc; */}
     text-decoration: underline;
     transform: scale(0.96);
     transition: 0.3s ease-in-out;
@@ -90,6 +100,7 @@ const Wrapper= styled.section `
     margin-top: 1.5rem;
     margin-bottom: 3.4rem;
     max-width: 60rem;
+    font-weight: 1000;
     text-align: justify;
     text-justify: inter-character;
     color: ${({theme})=> theme.colors.helper};
@@ -110,7 +121,7 @@ const Wrapper= styled.section `
     }
     picture img{
         height:43rem;
-        width:55rem;
+        width:50rem;
         border-radius:100%;
         
 
@@ -124,15 +135,27 @@ const Wrapper= styled.section `
     .fluidAnim{
         animation: MoveUpDown 8s ease-in-out infinite alternate-reverse both;
     }
+    .fluidAnimPara{
+        animation: MoveLeftRight 8s ease-in-out infinite alternate-reverse both;
+    }
 
     @keyframes MoveUpDown {
-    0%, 100% {
-        transform: translateY(0);
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(30px);
+        }
     }
-    50% {
-        transform: translateY(30px);
+
+    @keyframes MoveLeftRight {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translate(100px);
+        }
     }
-}
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
         .grid {

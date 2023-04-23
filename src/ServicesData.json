@@ -1,23 +1,30 @@
 [
     {
         "id":1,
-        "title": "All in One Plan",
-        "price": "$25.00/m",
-        "description": "Lite + Spyfu, Spin Rewriter, Wordai, Quetext, stock, storyblocks, buzzsumo, majestic, vyond, placeit, envato elements, wordtune, rytr, KeywordTool.io, Woorank, Wordhero, spamzilla.io, Quillbot, Helium10, JS, Scalenut, Indexification and Invideo"
+        "title": "Foundation NEET/JEE",
+        "price": "₹30,000/yr",
+        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
     {
         "id":2,
-        "title": "Lite Plan",
-        "price": "$10.00/m",
-        "description": "Semrush, Longtail pro and keyword reseracher, Storybase, Moz, Keyword Revealer, Grammarly, Canva, Ubersuggest, Crello, Picmonkey, Skillshare, Prime and Netflix"
+        "title": "Pre-Foundation NEET/JEE",
+        "price": "₹30,000/yr",
+        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 9th/10th"
     },
 
     {
         "id":3,
-        "title": "Writer's Plan",
-        "price": "$25.00/m",
-        "description": "Copymatic, Rytr, Wordhero, Wordai, Spinrewriter, Quillbot, Grammarly, WordTune, Scalenut, Closerscopy, CreatorAi and Quetext"
+        "title": "Regular Academics 11th/12th",
+        "price": "₹2,700/mo",
+        "description": "For All 11th/12th Science Stream PCM & PCB "
+    },
+
+    {
+        "id":4,
+        "title": "Regular Academics 9th/10th",
+        "price": "₹1400/mo",
+        "description": "For All 9th/10th Science Stream PCM & PCB"
     }
 ]
 

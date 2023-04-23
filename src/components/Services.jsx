@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../context";
 
@@ -9,11 +9,11 @@ const Services=() =>{
 
     const {services}=useGlobalContext();
     // console.log(services);
-    const [isReadMore, setReadMore]=useState(true);
+    // const [isReadMore, setReadMore]=useState(true);
 
-    const toggleOver=()=>{
-        setReadMore(!isReadMore);
-    }
+    // const toggleOver=()=>{
+    //     setReadMore(!isReadMore);
+    // }
     
 
 
@@ -21,8 +21,8 @@ const Services=() =>{
     return (
         <>
             <Wrapper className="section">
-                <h2 className="common-heading"> Our Services</h2>
-                <div className="container grid grid-three-column">
+                <h2 className="common-heading"> Our Affordable Courses <span className="insideThought">With Best Class Faculty</span></h2>
+                <div className="container grid grid-two-column">
                     {
                         services.map((curElem) => {
                             const {id, title, price, description} =curElem;
@@ -35,14 +35,10 @@ const Services=() =>{
                                         <h3>{title}</h3>
 
 
-                                        <p className="description">{isReadMore? description.slice(0,50):description}
-                                            <span onClick={toggleOver} className='read-or-hide'>
-                                                {isReadMore?" ...Read More": " ...Read Less"}
-                                            </span>
-                                        </p>
+                                        <p className="description">{description}</p>
 
 
-                                        <Button className="btn"><a href="https://access.vipseotools.com/signup/" >Subscribe</a></Button>
+                                        <Button className="btn"><a href="/" >Subscribe</a></Button>
                                     </div>
                                 </div>
                             );
@@ -56,11 +52,18 @@ const Services=() =>{
 };
 
 const Wrapper = styled.section`
-    padding: 9rem 0;
-
+    padding: 9rem 0 0;
+    margin-top:10rem;
+    background:rgba(128, 128, 128, 0.049);
     .container{
         max-width: 120rem;
 
+    }
+    .insideThought{
+        display:flex;
+        justify-content: center;
+        font-weight:500;
+        font-size:3rem;
     }
 
     .card{
@@ -113,12 +116,12 @@ const Wrapper = styled.section`
         justify-content: center;
         align-items:center;
         position: relative;
-        overflow: hidden;
+        ${'' /* overflow: hidden; */}
         transition: all 0.5s linear;
         
         
         .price{
-            color: #1e9affef;;
+            color: #1e9affef;
         }
 
         &::after{
@@ -128,7 +131,7 @@ const Wrapper = styled.section`
             left:0;
             width: 0%;
             height: 100%;
-            background-color: #1e9aff61;
+            background: #1e9aff61;
             transition: all 0.2s linear;
             cursor: pointer;
         }
