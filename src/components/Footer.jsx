@@ -31,7 +31,7 @@ const Footer =()=>{
             {/* 1st col */}
             <div className='footer-about'>
                 <h3>Saraswati Classes</h3>
-                <p>With determination to get the best results</p>
+                <p>An effective way of learning</p>
             </div>
 
 
@@ -49,13 +49,13 @@ const Footer =()=>{
                 <h3>Follows Us</h3>
                 <div className='footer-social--icons'>
                     <div>
-                        <a href='/' target='_blank' rel="noreferrer">
+                        <a href='https://instagram.com/saraswaticlasses2014?igshid=ZDdkNTZiNTM=' target='_blank' rel="noreferrer">
                             <FaInstagram className="icons" />
                         </a>
                     </div>
 
                     <div>
-                        <a href='/' target='_blank' rel='noreferrer'>
+                        <a href='https://www.facebook.com/profile.php?id=100063700494165&mibextid=ZbWKwL' target='_blank' rel='noreferrer'>
                             <FaFacebook className="icons" />
                         </a>
                     </div>
