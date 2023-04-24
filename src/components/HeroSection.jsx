@@ -29,7 +29,7 @@ const HeroSection=() =>
                         </h1>
                         
                         <p className="hero-para fluidAnimPara">{heroPara}</p>
-                        <p className="hero-Para">{heroPara1}</p>
+                        <p className="hero-Para2">{heroPara1}</p>
                         <Box>
                             <ButtonGroup variant="outlined" aria-label="outlined button group" className="buttonEffect">
                                 <Button className="btn logReg "><NavLink exact activeClassName="active" to={link1}><b>{groupButton1}</b></NavLink></Button>
@@ -121,6 +121,17 @@ const Wrapper= styled.section `
     text-justify: inter-character;
     color: ${({theme})=> theme.colors.helper};
     }
+
+    .hero-para2 {
+    margin-top: 1.5rem;
+    margin-bottom: 3.4rem;
+    max-width: 60rem;
+    font-weight: 1000;
+    text-align: justify;
+    text-justify: inter-character;
+    color: ${({theme})=> theme.colors.helper};
+    }
+
     .button2{
             color: white;
         }

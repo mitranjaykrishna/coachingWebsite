@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 import Footer from "./components/Footer";
 import ViewCourses from "./components/ViewCourses";
+import ScrollToTop from "./ScrollToTop";
 
 const App=()=>{
 
@@ -38,6 +39,7 @@ const App=()=>{
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <BrowserRouter>
+                    <ScrollToTop />
                     <NavBar />
                     <Routes>
                         <Route exact path='/' element={<Home />}/>
