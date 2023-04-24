@@ -1,19 +1,22 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
-// import Contact from "./Contact";
+// import About from "./About";
+import Contact from "./Contact";
 
 
 
 const Home=() =>{
     const { updateHomePage }=useGlobalContext();
-    useEffect(() => updateHomePage());
+    useEffect(() => updateHomePage(),[]);
     return (
         <>
             <HeroSection/>
             <Services />
-            {/* <Contact />             */}
+            <Contact />
+
             
              
                       
