@@ -5,6 +5,7 @@ import HeroSection from "./HeroSection";
 import Services from "./Services";
 // import About from "./About";
 import Contact from "./Contact";
+import Faculty from "./Faculty";
 
 
 
@@ -15,6 +16,7 @@ const Home=() =>{
         <>
             <HeroSection/>
             <Services />
+            <Faculty />
             <Contact />
 
             

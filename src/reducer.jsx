@@ -49,6 +49,16 @@ const reducer = (state,action)=>{
         }
     }
 
+    if(action.type === "Faculty_UPDATE")
+    {
+
+        return {
+            ...state,
+            faculties: action.payload,
+
+        }
+    }
+
     return state;
 };
 

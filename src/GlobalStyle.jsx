@@ -92,6 +92,13 @@ li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-four-column-equal{
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap:3rem;
+}
+
 .grid-four-column{
    grid-template-columns: 1fr 1.2fr .5fr .8fr ;
 }

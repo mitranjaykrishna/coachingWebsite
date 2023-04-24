@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useReducer } from "react";
 import reducer from "./reducer";
 import ServicesData from "./ServicesData";
+import FacultyData from "./FacultyData";
+
 
 const AppContext=React.createContext();
 
@@ -16,6 +18,7 @@ const initialState={
     link2:"",
     pageImage:"",
     services: [],
+    faculties:[],
 }
 
 const AppProvider=({children})=>{
@@ -53,7 +56,7 @@ const AppProvider=({children})=>{
                 At Saraswati Coaching, we firmly believe that the success of our students is our success. Therefore, we are committed to providing a student-oriented learning environment that focuses on the unique needs of each individual student. We offer a range of courses that cater to students from various educational backgrounds and levels of proficiency.`,
                 groupButton1:"Contact Us",
                 link1:"/contact",
-                groupButton2:"Services",
+                groupButton2:"Courses",
                 link2:"/services",
                 pageImage:"./images/CEOImage.png",
             },
@@ -69,6 +72,16 @@ const AppProvider=({children})=>{
     }
 
     useEffect(() => getServices(),[]);
+
+    const getFaculty=()=>
+    {
+        return dispatch({
+            type:"Faculty_UPDATE",
+            payload:FacultyData,
+        });
+    }
+
+    useEffect(() => getFaculty(),[]);
     
     return (
         <AppContext.Provider value={{...state, updateHomePage, updateAboutPage}}>

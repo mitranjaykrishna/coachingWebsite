@@ -5,10 +5,10 @@ import { useGlobalContext } from "../context";
 
 
 
-const Services=() =>{
+const Faculty=() =>{
 
-    const {services}=useGlobalContext();
-    // console.log(services);
+    const {faculties}=useGlobalContext();
+    // console.log(faculties);
     // const [isReadMore, setReadMore]=useState(true);
 
     // const toggleOver=()=>{
@@ -21,18 +21,18 @@ const Services=() =>{
     return (
         <>
             <Wrapper className="section">
-                <h2 className="heading"> Our Affordable Courses <span className=" common-heading insideThought">With Best Class Faculty</span></h2>
-                <div className="container grid grid-two-column">
+                <h2 className="heading"> Meet Our Faculty <span className=" common-heading insideThought">Best In Ayodhya</span></h2>
+                <div className="container grid-four-column-equal">
                     {
-                        services.map((curElem) => {
-                            const {id, title, img, description} =curElem;
+                        faculties.map((curElem) => {
+                            const {id, name,qualification,subject, img, description} =curElem;
                             return(
                                 <div key={id} className="card">
                                     <figure>
                                         <img src={img} alt="" />
                                     </figure>
                                     <div className="card-data">
-                                        <h3>{title}</h3>
+                                        <h3>{name}</h3>
 
 
                                         <p className="description">{description}</p>
@@ -224,4 +224,4 @@ const Wrapper = styled.section`
 
 `;
 
-export default Services;
+export default Faculty;
