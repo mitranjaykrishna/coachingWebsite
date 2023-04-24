@@ -62,14 +62,17 @@ const Contact=() =>{
 const Wrapper=styled.section`
         padding: 9rem 0 5rem 0;
         margin-top:10rem;
+        background:rgba(128, 128, 128, 0.049);
 
 
         .container{
             margin-top: 6rem;
+            padding:4rem 0;
             text-align: center;
             background-color: ${({theme})=> theme.colors.bg};
             border-radius: 1rem;
             box-shadow: ${({theme}) => theme.colors.shadowSupport};
+            width:60rem;
 
             .contact-form{
                 max-width:50rem;

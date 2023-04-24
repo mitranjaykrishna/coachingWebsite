@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 // import React, { useState } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../context";
@@ -21,11 +21,22 @@ const Faculty=() =>{
     return (
         <>
             <Wrapper className="section">
+            <div className="containerInside">
                 <h2 className="heading"> Meet Our Faculty <span className=" common-heading insideThought">Best In Ayodhya</span></h2>
+                <p>Are you looking for an experienced teacher who can help you or your child improve their understanding and performance in the subject? Look no further than our highly qualified and experienced teacher with over 6 years of teaching experience!
+
+                    Our teacher has a passion for teaching and helping students of all levels succeed. With a deep understanding of the subject matter, our teacher is able to break down complex concepts into simple, easy-to-understand terms, making learning enjoyable and effective.
+
+                    With years of experience in both classroom and one-on-one settings, our teacher has developed a range of teaching methods and strategies to help each student reach their full potential. Whether you're struggling to understand a particular topic or need help preparing for an exam, our teacher has the knowledge, skills, and experience to help you succeed.
+
+                    So if you're looking for a highly skilled and experienced teacher who can help you achieve your goals, look no further than our expert educator with over 6 years of experience in the field. Contact us today to learn more about our services and how we can help you achieve academic success in!
+                    
+                    </p>
+                </div>
                 <div className="container grid-four-column-equal">
                     {
                         faculties.map((curElem) => {
-                            const {id, name,qualification,subject, img, description} =curElem;
+                            const {id, name,qualification,subject, img} =curElem;
                             return(
                                 <div key={id} className="card">
                                     <figure>
@@ -33,12 +44,12 @@ const Faculty=() =>{
                                     </figure>
                                     <div className="card-data">
                                         <h3>{name}</h3>
+                                        <h4>{subject}</h4>
+                                        <p className="subject">{qualification}</p>
+                                        {/* <p className="description">{description}</p> */}
 
 
-                                        <p className="description">{description}</p>
-
-
-                                        <Button className="btn"><a href="/viewcourses" >View Courses</a></Button>
+                                        {/* <Button className="btn"><a href="/viewcourses" >View Courses</a></Button> */}
                                     </div>
                                 </div>
                             );
@@ -54,10 +65,11 @@ const Faculty=() =>{
 const Wrapper = styled.section`
     padding: 9rem 0 0;
     margin-top:10rem;
-    background:rgba(128, 128, 128, 0.049);
-    .container{
-        max-width: 120rem;
-
+    ${'' /* background:rgba(128, 128, 128, 0.049); */}
+    .containerInside{
+    max-width: 120rem;
+    margin: 0 auto;
+    ${'' /* margin-top:10rem; */}
     }
     .heading {
       font-size: 6rem;
@@ -101,7 +113,7 @@ const Wrapper = styled.section`
             }
 
             &:hover img{
-                transform: scale(1.5,1.5);
+                transform: scale(1.3,1.2);
                 ${'' /* box-shadow: 1px 1px 100px black; */}
             }
         }
@@ -141,20 +153,30 @@ const Wrapper = styled.section`
         }
         
         h3{
-            margin: 3rem 0;
+            margin: 3rem 0 1rem;
             font-weight: 700;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color:  #1d73dc;
-            z-index:100;
         }
-        
+        h4{
+            ${'' /* margin: 3rem 0; */}
+            font-weight: 300;
+            font-size: 2.6rem;
+            color:  #1d73dc;
+        }
 
-        .description{
+        .subject{
+            margin:0 0 2rem 0;
+            font-size:1.2rem;
+            color:#1d73dc;
+        }        
+
+        ${'' /* .description{
             text-align: justify;
             text-justify: inter-character;
-        }
+        } */}
 
-        .btn{
+        ${'' /* .btn{
             margin: 2rem auto;
             background-color: rgb(0 0 0 /0%);
             border: 0.1rem solid  #1d73dc;
@@ -170,12 +192,12 @@ const Wrapper = styled.section`
             &:hover{
                 background-color:  rgba(44, 182, 120, 0.226);
                 
-                ${'' /* color:  #1d73dc; */}
+                color:  #1d73dc;
             }
 
             
 
-        }
+        } */}
     
 
         figure{

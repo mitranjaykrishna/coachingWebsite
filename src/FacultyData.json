@@ -2,9 +2,9 @@
     {
         "id":1,
         "name": "Deepak Upadhaya",
-        "qualification": "₹30,000/yr",
-        "subject":"",
-        "img":"./images/courseImage/eng.png",
+        "qualification": "MSc Organic Chemistry,BED, Phd*",
+        "subject":"Chemistry",
+        "img":"./images/teachers/deepakChemistry.png",
         "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
@@ -12,34 +12,25 @@
         "id":2,
         "name": "Lorem",
         "qualification": "₹30,000/yr",
-        "subject":"",
+        "subject":"Physics",
         "img":"./images/courseImage/eng.png",
         "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
     {
         "id":3,
-        "name": "JEE",
+        "name": "Ipsum",
         "qualification": "₹30,000/yr",
-        "subject":"",
+        "subject":"Mathmatics",
         "img":"./images/courseImage/eng.png",
         "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     },
 
     {
         "id":4,
-        "name": "JEE(Main+Advanced) IIT-JEE",
+        "name": "Lorem",
         "qualification": "₹30,000/yr",
-        "subject":"",
-        "img":"./images/courseImage/eng.png",
-        "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
-    },
-
-    {
-        "id":5,
-        "name": "JEE(Main+Advanced) IIT-JEE",
-        "qualification": "₹30,000/yr",
-        "subject":"",
+        "subject":"Biology",
         "img":"./images/courseImage/eng.png",
         "description": "Covers Foundation and Regular Academics NEET/JEE Mains+Adv & 11th/12th"
     }

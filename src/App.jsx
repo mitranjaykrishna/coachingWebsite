@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter, Route , Routes, } from "react-router-dom";
+import { HashRouter, Route , Routes, } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Contact from "./components/Contact"
@@ -38,7 +38,7 @@ const App=()=>{
         <>
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
-                <BrowserRouter>
+                <HashRouter>
                     <ScrollToTop />
                     <NavBar />
                     <Routes>
@@ -50,7 +50,7 @@ const App=()=>{
                         {/* <Redirect to="/" /> */}
                     </Routes>
                     <Footer />
-                </BrowserRouter>
+                </HashRouter>
             </ThemeProvider>
         </>
     );

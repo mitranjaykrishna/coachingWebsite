@@ -21,11 +21,17 @@ const Services=() =>{
     return (
         <>
             <Wrapper className="section">
+            <div className="containerInside">
                 <h2 className="heading"> Our Affordable Courses <span className=" common-heading insideThought">With Best Class Faculty</span></h2>
+                <p>We are proud to offer affordable and accessible courses to help you achieve your educational goals without breaking the bank. Our courses are not only high-quality and comprehensive, but they are also among the most competitively priced on the market.
+                We understand that education can be expensive, which is why we have made it our mission to provide top-notch courses at the most affordable prices possible. With our courses, you won't have to sacrifice quality for affordability.
+                </p>
+            
+            </div>
                 <div className="container grid grid-two-column">
                     {
                         services.map((curElem) => {
-                            const {id, title, img, description} =curElem;
+                            const {id, title,price, img, description} =curElem;
                             return(
                                 <div key={id} className="card">
                                     <figure>
@@ -38,7 +44,7 @@ const Services=() =>{
                                         <p className="description">{description}</p>
 
 
-                                        <Button className="btn"><a href="/viewcourses" >View Courses</a></Button>
+                                        <Button className="btn">{price}</Button>
                                     </div>
                                 </div>
                             );
@@ -55,10 +61,13 @@ const Wrapper = styled.section`
     padding: 9rem 0 0;
     margin-top:10rem;
     background:rgba(128, 128, 128, 0.049);
-    .container{
-        max-width: 120rem;
 
+    .containerInside{
+    max-width: 120rem;
+    margin: 0 auto;
+    ${'' /* margin-top:10rem; */}
     }
+
     .heading {
       font-size: 6rem;
       font-weight: 700;
@@ -162,7 +171,7 @@ const Wrapper = styled.section`
             justify-content: center;
             align-items: center;
             color:  #1d73dc;
-            font-size: 1.4rem;
+            font-size: 3rem;
             z-index:10;
 
             

@@ -23,7 +23,7 @@ a:link, a:visited{
     width: 100%;
     height: 10rem;
     display: grid;
-    grid-template-columns: 13rem 10fr 2fr 2.5fr 13rem;
+    grid-template-columns: 13rem 10fr 6fr 13rem;
     background: linear-gradient(0deg, #1d73dc -95%, rgba(255, 255, 255, 0) 65%);
     /* box-shadow: 10px 40px 130px -8px #DC2C1D; */
     box-shadow: 2px 0px 20px 2px #1d73dc;
