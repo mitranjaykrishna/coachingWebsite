@@ -66,7 +66,7 @@ const Footer =()=>{
             {/* 4th col */}
             <div className='footer-contact'>
                 <h3 className='footer-contact-heading'> Contact Us</h3>
-                <p>Address- 54 3rd floor, Rolex Apartments, Lucknow, UP 226016</p>
+                <p>Saraswati Classes,Ramnagar Road, Maqbara, Faizabad, Uttar Pradesh</p>
             </div>
         </div>
 
@@ -74,16 +74,10 @@ const Footer =()=>{
 
         <div className='footer-bottom--section'>
             <hr />
-            <div className='container grid grid-three-column'>
+            <div className='container'>
                 <p>
                     @{new Date().getFullYear()} Saraswati Classes. All Rights Reserved
                 </p>
-                <div>
-                    <p>PRIVACY POLICY</p>
-                </div>
-                <div>
-                    <p>TERMS & CONDITIONS</p>
-                </div>
             </div>
 
         </div>
@@ -155,6 +149,7 @@ const Wrapper=styled.section`
 
         .footer-bottom--section{
             padding-top: 4rem;
+            text-align:center;
 
             hr{
                 margin-bottom: 2rem;

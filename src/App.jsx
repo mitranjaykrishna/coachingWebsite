@@ -8,7 +8,7 @@ import Services from "./components/Services";
 import Home from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 import Footer from "./components/Footer";
-import ScrollToTop from "./ScrollToTop";
+import ViewCourses from "./components/ViewCourses";
 
 const App=()=>{
 
@@ -38,13 +38,13 @@ const App=()=>{
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <BrowserRouter>
-                  <ScrollToTop />
                     <NavBar />
                     <Routes>
                         <Route exact path='/' element={<Home />}/>
                         <Route exact path='/services' element={<Services />}/>
                         <Route exact path='/about' element={<About />} />
                         <Route exact path='/contact' element={<Contact />}/>
+                        <Route exact path='/viewcourses' element={<ViewCourses />}/>
                         {/* <Redirect to="/" /> */}
                     </Routes>
                     <Footer />

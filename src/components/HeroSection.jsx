@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const HeroSection=() =>
 {
 
-    const {heroTopData,heading,heading1,heroPara,groupButton1,link1,groupButton2,link2,pageImage}=useGlobalContext();
+    const {heroTopData,heading,heading1,heroPara,heroPara1,groupButton1,link1,groupButton2,link2,pageImage}=useGlobalContext();
     // console.log(link1);
 
     return (
@@ -29,6 +29,7 @@ const HeroSection=() =>
                         </h1>
                         
                         <p className="hero-para fluidAnimPara">{heroPara}</p>
+                        <p className="hero-Para">{heroPara1}</p>
                         <Box>
                             <ButtonGroup variant="outlined" aria-label="outlined button group" className="buttonEffect">
                                 <Button className="btn logReg "><NavLink exact activeClassName="active" to={link1}><b>{groupButton1}</b></NavLink></Button>

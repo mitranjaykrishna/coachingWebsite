@@ -38,7 +38,7 @@ const Services=() =>{
                                         <p className="description">{description}</p>
 
 
-                                        <Button className="btn"><a href="/" >View Courses</a></Button>
+                                        <Button className="btn"><a href="/viewcourses" >View Courses</a></Button>
                                     </div>
                                 </div>
                             );
@@ -78,15 +78,65 @@ const Wrapper = styled.section`
         background-color: ${({theme})=> theme.colors.bg};
         border-radius: 1rem;
         box-shadow: ${({theme}) => theme.colors.shadowSupport};
+        ${'' /* height:100%; */}
+        transition: all 0.8s linear;
 
-        &:hover img{
+        &:hover{
             transform: scale(1.1,1.1);
+            &::after{
+                content: "";
+                position: absolute;
+                top:0;
+                left:0;
+                width: 0%;
+                height: 100%;
+                background: rgba(44, 182, 120, 0.226);
+                transition: all 0.8s linear;
+                cursor: pointer;
+                z-index:0;
+            }
+
+            &:hover::after{
+                width:100%
+            }
+
+            &:hover img{
+                transform: scale(1.5,1.5);
+                ${'' /* box-shadow: 1px 1px 100px black; */}
+            }
         }
         
+        ${'' /* &:hover figure{
+            &::after{
+                content: "";
+                position: absolute;
+                top:0;
+                left:0;
+                width: 0%;
+                height: 100%;
+                background: rgba(44, 182, 120, 0.226);
+                transition: all 0.4s linear;
+                cursor: pointer;
+                z-index:0;
+            }
+
+            &:hover::after{
+                width:100%
+            }
+        } */}
 
         .card-data{
             padding: 0 2rem;
+            ${'' /* height:15rem; */}
+
             
+            ${'' /* &:hover{
+            background:black;
+            
+            &:hover p{
+                color:white;
+            } */}
+        }
             
         }
         
@@ -113,75 +163,63 @@ const Wrapper = styled.section`
             align-items: center;
             color:  #1d73dc;
             font-size: 1.4rem;
+            z-index:10;
 
             
 
             &:hover{
                 background-color:  rgba(44, 182, 120, 0.226);
+                
                 ${'' /* color:  #1d73dc; */}
             }
 
             
 
         }
-    }
-
-    figure{
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        position: relative;
-        ${'' /* overflow: hidden; */}
-        transition: all 0.5s linear;
-        
-        
-        ${'' /* .price{
-            color: rgb(44, 182, 120);
-        } */}
-
-        &::after{
-            content: "";
-            position: absolute;
-            top:0;
-            left:0;
-            width: 0%;
-            height: 100%;
-            background: rgba(44, 182, 120, 0.226);
-            transition: all 0.2s linear;
-            cursor: pointer;
-            z-index:0;
-        }
-
-        &:hover::after{
-            width:100%
-        }
-        
-
-        ${'' /* &:hover img{
-            transform: scale(1.1,1.1);
-        } */}
-
-        img{
-            max-width: 90%;
-            margin-top: 1.5rem;
-            height: 15rem;
-            transition: all 0.2s linear;
-            z-index:1;
-        }
-    }
-    a:link, a:visited{
-    color:  #1d73dc;
-
-    &:hover{
-        color: #1d73dc;
-    }
     
+
+        figure{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: relative;
+            background: rgba(44, 182, 120, 0.226);
+            ${'' /* overflow: hidden; */}
+            ${'' /* transition: all 0.5s linear; */}
+            
+            
+            ${'' /* .price{
+                color: rgb(44, 182, 120);
+            } */}
+
+            
+            
+
+            ${'' /* &:hover img{
+                transform: scale(1.1,1.1);
+            } */}
+
+            img{
+                max-width: 90%;
+                margin-top: 1.5rem;
+                height: 15rem;
+                transition: all 0.8s linear;
+                z-index:1;
+            }
+        }
+        a:link, a:visited{
+        color:  #1d73dc;
+
+        &:hover{
+            color: #1d73dc;
+        }
+        
+        }
+        .read-or-hide{
+        color: ${({theme})=> theme.colors.helper};
+        cursor: pointer;
     }
-    .read-or-hide{
-    color: ${({theme})=> theme.colors.helper};
-    cursor: pointer;
-}
 
 `;
 
